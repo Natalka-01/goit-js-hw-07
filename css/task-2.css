@@ -1,0 +1,23 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* відстань між картками */
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1000px;
+    /* щоб галерея не розтягувалась занадто */
+}
+
+.gallery-item {
+    flex-basis: calc(33.333% - 20px);
+    /* три картинки в ряд */
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
